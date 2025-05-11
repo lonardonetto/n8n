@@ -75,9 +75,7 @@
     "zx": "^8.1.4"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "sqlite3"
-    ],
+    "onlyBuiltDependencies": [],
     "overrides": {
       "@types/node": "^18.16.16",
       "chokidar": "^4.0.1",
@@ -89,7 +87,8 @@
       "tsconfig-paths": "^4.2.0",
       "typescript": "^5.8.2",
       "vue-tsc": "^2.2.8",
-      "ws": ">=8.17.1"
+      "ws": ">=8.17.1",
+      "sqlite3": "optional:sqlite3@5.1.7"
     },
     "patchedDependencies": {
       "bull@4.16.4": "patches/bull@4.16.4.patch",
