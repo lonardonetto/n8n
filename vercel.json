@@ -2,7 +2,7 @@
 	"version": 2,
 	"buildCommand": "mkdir -p node_modules/.pnpm/sqlite3@5.1.7/node_modules && touch node_modules/.pnpm/sqlite3@5.1.7/node_modules/sqlite3.js && pnpm build",
 	"outputDirectory": "packages/cli/dist",
-	"installCommand": "pnpm install --ignore-scripts",
+	"installCommand": "pnpm install --ignore-scripts --no-frozen-lockfile",
 	"env": {
 		"DB_TYPE": "postgresdb",
 		"DB_POSTGRESDB_DATABASE": "${POSTGRES_DATABASE}",
