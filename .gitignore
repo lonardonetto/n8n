@@ -24,3 +24,7 @@ CHANGELOG-*.md
 build-storybook.log
 *.junit.xml
 junit.xml
+# SpecStory explanation file
+.specstory/.what-is-this.md
+# Vercel
+.vercel

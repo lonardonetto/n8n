@@ -70,3 +70,23 @@ Want to shape the future of automation? Check out our [job posts](https://n8n.io
 **Short answer:** It means "nodemation" and is pronounced as n-eight-n.
 
 **Long answer:** "I get that question quite often (more often than I expected) so I decided it is probably best to answer it here. While looking for a good name for the project with a free domain I realized very quickly that all the good ones I could think of were already taken. So, in the end, I chose nodemation. 'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with. However, I did not like how long the name was and I could not imagine writing something that long every time in the CLI. That is when I then ended up on 'n8n'." - **Jan Oberhauser, Founder and CEO, n8n.io**
+
+## Implantação no Vercel
+
+Este projeto pode ser implantado no Vercel utilizando PostgreSQL como banco de dados. Siga os passos abaixo:
+
+1. Crie um banco de dados PostgreSQL (recomendamos serviços como Supabase, Neon ou Railway).
+2. Configure as seguintes variáveis de ambiente no Vercel:
+   - `POSTGRES_DATABASE`: Nome do banco de dados
+   - `POSTGRES_HOST`: Host do PostgreSQL
+   - `POSTGRES_PORT`: Porta do PostgreSQL (geralmente 5432)
+   - `POSTGRES_USER`: Usuário do PostgreSQL
+   - `POSTGRES_PASSWORD`: Senha do PostgreSQL
+   - `N8N_ENCRYPTION_KEY`: Chave de criptografia para o n8n (gere uma string aleatória de 32 caracteres)
+
+3. Implante o projeto no Vercel usando:
+   ```
+   vercel
+   ```
+
+**Nota**: O projeto está configurado para resolver o problema de compilação do SQLite3 instalando o pacote `python3-distutils` durante a instalação.
