@@ -88,7 +88,7 @@
       "typescript": "^5.8.2",
       "vue-tsc": "^2.2.8",
       "ws": ">=8.17.1",
-      "sqlite3": "optional:sqlite3@5.1.7"
+      "sqlite3": "5.1.7"
     },
     "patchedDependencies": {
       "bull@4.16.4": "patches/bull@4.16.4.patch",
